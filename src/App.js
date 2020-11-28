@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import Header from "./Components/Header/Header";
+import Contact from "./Components/ContactUs/Contact";
+import AddressBook from "./Components/AddressBook/AddressBook";
+import TaskManeger from "./Components/TaskManeger/TaskManeger";
+import Footer from "./Components/Footer/Footer";
 
-function App() {
+const App=()=> {
   return (
+    <React.Fragment>
+      <Header/>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+     <TaskManeger/>
+      <AddressBook/>
+     <Contact/>
     </div>
+     <Footer/>
+     </React.Fragment>
   );
 }
 

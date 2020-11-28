@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  position: fixed;
+  z-index: 9999;
+  border-bottom: 1px solid rgb(167, 167, 167);
+  // width: 90vw;s
+  width: 90%;
+  padding: 0 70px;
+  background-color: white;
+  align-items: center;
+  &-logo{
+  
+    
+    font-size: 1.6rem;
+    span{
+      color: #fed631
+    }
+  }
+  &-items{
+    list-style: none;
+    display: flex;
+    font-weight: 600;
+    li{
+      &:not(:last-child){
+        margin-right: 40px;
+      }
+      cursor: pointer;
+    }
+    justify-content: space-around;
+  }
+  
+}

@@ -1,0 +1,39 @@
+.Contact{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  height: 80vh;
+  
+
+  &-side--left{
+    background-image: url("../assets/contactus.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 60%;
+  }
+  &-side--right{
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    width: 40%;
+   &--texthead{
+     font-size: 2.3rem;
+     font-weight: 600;
+     padding-bottom: 20px;
+   }
+    &-inputTop{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+     
+      
+    }
+  }
+  
+}
